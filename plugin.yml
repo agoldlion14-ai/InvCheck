@@ -1,0 +1,18 @@
+name: InvCheck
+version: 1.1.0
+main: com.example.invcheck.InvCheck
+api-version: "1.16"
+description: View and rearrange another player's inventory or ender chest.
+commands:
+  invcheck:
+    description: View a player's inventory
+    usage: /invcheck <player> [ender]
+    aliases: [inventorycheck, icheck]
+    permission: invcheck.use
+permissions:
+  invcheck.use:
+    description: Allows using /invcheck (view only)
+    default: op
+  invcheck.edit:
+    description: Allows rearranging items inside the viewed inventory
+    default: op
